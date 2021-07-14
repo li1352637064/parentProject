@@ -3,13 +3,15 @@ server:
 spring:
   application:
     name: config-server
+  profiles:
+    active: git
   cloud:
     config:
-      label: master
       server:
         git:
           uri: https://github.com/li1352637064/parentProject
           search-paths: respo
+          default-label: master
 eureka:
   client:
     service-url:
