@@ -2,3 +2,4 @@
 /eurekaServer/target/
 /product-data-service/target/
 /product-view-service-feign/target/
+/config-server/target/
