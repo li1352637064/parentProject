@@ -1,9 +1,8 @@
-package top.lqh.controller;
+package top.lqh;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import top.lqh.service.ProductService;
 
 import javax.annotation.Resource;
 
@@ -13,11 +12,11 @@ import javax.annotation.Resource;
 @Controller
 public class ProductController {
     @Resource
-    private ProductService productService;
+    private ProductClient productClient;
 
     @RequestMapping
     public String list(Model model){
-        model.addAttribute("list", productService.list());
+        model.addAttribute("list", productClient.list());
         return "products";
     }
 }

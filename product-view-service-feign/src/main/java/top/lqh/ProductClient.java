@@ -1,8 +1,7 @@
-package top.lqh.feignClient;
+package top.lqh;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import top.lqh.pojo.Product;
 
 import java.util.List;
 

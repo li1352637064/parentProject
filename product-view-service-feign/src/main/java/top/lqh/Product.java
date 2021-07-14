@@ -1,4 +1,4 @@
-package top.lqh.pojo;
+package top.lqh;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
