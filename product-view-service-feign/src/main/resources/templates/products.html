@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品页面</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 800px;
+            margin: 20px auto;
+        }
+
+        td,th{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>产品名称</th>
+            <th>产品价格</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${list}">
+            <td th:text="${p.id}"></td>
+            <td th:text="${p.name}"></td>
+            <td th:text="${p.price}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
